@@ -1,0 +1,138 @@
+*{
+    /* margin:0;
+    padding:0; */
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+.video-cont{
+    background-color: black;
+    width: 100vw;
+    height:100vh;
+}
+.action-cont{
+    height:12rem;
+    width:5rem;
+    position:absolute;
+    top: calc( (100vh - 12rem) / 2 );
+    right:5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.action-cont > * {
+    width: 100%;
+    height: 5rem;
+    border-radius: 50%;
+    border:5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.record-btn{
+    background-color: red;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    /* animation:bounce; */
+     /* animation-duration: 4s;   */
+}
+.capture-btn{
+    background-color: white;
+    height: 3rem;
+    width:3rem;
+    border-radius: 50%;
+}
+.timer-cont{
+    position:absolute;
+    color:aqua;
+    font-size: 0.8rem;
+    bottom:10rem;
+    left:5rem;
+
+}
+.timer{
+    display: none;
+}
+
+.gallery{
+    color: white;
+    position: absolute;
+    right: 6rem;
+    bottom: 7rem;
+    font-size: 3rem;
+
+}
+.gallery:hover{
+    cursor: pointer;
+}
+.back{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 4rem;
+    right:5rem;
+
+}
+.back:hover{
+    cursor: pointer;
+}
+.gallery-cont{
+    background-color: #ced6e0;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.media-cont{
+    height:15rem;
+    width: 15rem;
+    border: 10px solid white;
+    margin: 2rem;
+
+}
+.medias{
+    height: calc(100% -2rem -2rem);
+}
+.medias > *{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.delete{
+    height: 2rem;
+    background-color: rgb(223,43,43);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.download{
+    height: 2rem;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.delete:hover{
+    cursor: pointer;
+}
+.download:hover{
+    cursor: pointer;
+}
